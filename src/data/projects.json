@@ -1,0 +1,26 @@
+[
+  {
+    "title": "MetroBreathe",
+    "imageSrc": "pics/Metro.png",
+    "description": "Development of Smart Air Pollution Monitoring with Machine Learning Predictive System for Smog",
+    "skills": ["Bootstrap", "Machine Learning", "Embedded Systems"],
+    "demo": "https://migzcervvv.github.io/Thesis-Website/",
+    "source": "https://github.com/migzcervvv/Thesis-Website"
+  },
+  {
+    "title": "Leaf It To Me",
+    "imageSrc": "pics/Screenshot_7.png",
+    "description": "Empowering Lettuce Health with Integrated Disease and Pest Detection and Growth Monitoring",
+    "skills": ["MIT App Inventor", "Flask", "Firebase"],
+    "demo": "/",
+    "source": "/"
+  },
+  {
+    "title": "ParkEase Connect",
+    "imageSrc": "pics/Screenshot_8.png",
+    "description": "A Smart Parking Approach with IOT Technology",
+    "skills": ["Firebase", "Embedded Systems", "C++"],
+    "demo": "/",
+    "source": "/"
+  }
+]

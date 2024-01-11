@@ -1,0 +1,189 @@
+@import "../../vars.css";
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+:root:has(button:active) {
+  --size: 300px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  font-family: var(--font-robot);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.description {
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: var(--font-robot);
+  margin-bottom: 52px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnbox a {
+  text-decoration: none;
+  color: white;
+}
+
+.btnbox {
+  border-radius: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1ch;
+  background: var(--bg);
+  border: 4px solid transparent;
+  box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+  cursor: pointer;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box, var(--glow),
+    linear-gradient(black, black) border-box;
+  transition: background-size 0.24s;
+  touch-action: none;
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.btnbox::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  filter: blur(20px);
+  border: 4px solid transparent;
+  background: var(--glow);
+  border-radius: 1rem;
+}
+
+.btnbox span {
+  background: var(--glow), black;
+  background-clip: text;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  inset: 0;
+}
+
+.btnbox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+  background: var(--bg);
+  z-index: 2;
+  border: 4px solid transparent;
+  border-radius: 1rem;
+}
+
+.heroImg {
+  width: 50%;
+  z-index: 1;
+  border-radius: 100%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 50vw;
+  height: 50vw;
+  min-width: 350px;
+  min-height: 350px;
+  top: -120px;
+  left: 10vw;
+  border-radius: 764px;
+  background: rgba(25, 55, 100, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 350px;
+  min-height: 250px;
+  top: 246px;
+  border-radius: 764px;
+  background: rgba(25, 55, 100, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 35px;
+  }
+
+  .topBlur {
+    display: none;
+  }
+
+  .bottomBlur {
+    display: none;
+  }
+}

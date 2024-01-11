@@ -1,0 +1,26 @@
+[
+  {
+    "role": "Senior High-School",
+    "organisation": "Augustinian Abbey School",
+    "startDate": "Jun, 2017",
+    "endDate": "Apr, 2019",
+    "experiences": ["Student-Athlete"],
+    "imageSrc": "pics/AAS.png"
+  },
+  {
+    "role": "College-Student",
+    "organisation": "Lyceum of Alabang",
+    "startDate": "Jun, 2019",
+    "endDate": "Mar, 2020",
+    "experiences": ["Student-Athlete"],
+    "imageSrc": "pics/LOA.png"
+  },
+  {
+    "role": "College-Student",
+    "organisation": "Pamantasan ng Lungsod ng Maynila",
+    "startDate": "Apr, 2021",
+    "endDate": "Present",
+    "experiences": ["Academic Scholar"],
+    "imageSrc": "pics/PLM.png"
+  }
+]
